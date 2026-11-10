@@ -71,49 +71,53 @@
     <a class="all-products" href="#produk">Lihat semua produk ↗</a>
   </div>
 
-  <div class="product-grid">
-    <!-- Kartu 1 -->
-    <article class="product-card">
-      <div class="product-image product-image-chocolate">
-        <img src="assets/img2.png" alt="Roti Boy" loading="lazy">
-        <span class="product-badge">FAVORIT</span>
-      </div>
-      <div class="product-meta">
-        <span class="product-category">ROTI MANIS</span>
-        <span class="product-price">Rp8.000</span>
-      </div>
-      <h3 class="product-name">Roti Boy</h3>
-      <p class="product-description">Roti lembut dengan isian cokelat melimpah.</p>
-      <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
-    </article>
-    <!-- Kartu 2 -->
-    <article class="product-card">
-      <div class="product-image product-image-cheese">
-        <img src="assets/img3.png" alt="Roti Abon Sapi" loading="lazy">
-        <span class="product-badge">FAVORIT</span>
-      </div>
-      <div class="product-meta">
-        <span class="product-category">ROTI MANIS</span>
-        <span class="product-price">Rp9.000</span>
-      </div>
-      <h3 class="product-name">Roti Abon Sapi</h3>
-      <p class="product-description">Gurihnya abon bersatu dalam genggaman roti.</p>
-      <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
-    </article>
-    <!-- Kartu 3 -->
-    <article class="product-card">
-      <div class="product-image product-image-beef">
-        <img src="assets/img4.png" alt="Roti Pisang Coklat" loading="lazy">
-        <span class="product-badge">FAVORIT</span>
-      </div>
-      <div class="product-meta">
-        <span class="product-category">ROTI GURIH</span>
-        <span class="product-price">Rp12.000</span>
-      </div>
-      <h3 class="product-name">Roti Pisang Coklat</h3>
-      <p class="product-description">Pisang dan coklat bertemu coklat penghantar lezat.</p>
-      <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
-    </article>
+  <div class="product-carousel">
+    <div class="product-grid">
+      <!-- Kartu 1 -->
+      <article class="product-card">
+        <div class="product-image product-image-chocolate">
+          <img src="assets/img2.png" alt="Roti Boy" loading="lazy">
+          <span class="product-badge">FAVORIT</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-category">ROTI MANIS</span>
+          <span class="product-price">Rp8.000</span>
+        </div>
+        <h3 class="product-name">Roti Boy</h3>
+        <p class="product-description">Roti lembut dengan isian cokelat melimpah.</p>
+        <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
+      </article>
+      <!-- Kartu 2 -->
+      <article class="product-card">
+        <div class="product-image product-image-cheese">
+          <img src="assets/img3.png" alt="Roti Abon Sapi" loading="lazy">
+          <span class="product-badge">FAVORIT</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-category">ROTI MANIS</span>
+          <span class="product-price">Rp9.000</span>
+        </div>
+        <h3 class="product-name">Roti Abon Sapi</h3>
+        <p class="product-description">Gurihnya abon bersatu dalam genggaman roti.</p>
+        <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
+      </article>
+      <!-- Kartu 3 -->
+      <article class="product-card">
+        <div class="product-image product-image-beef">
+          <img src="assets/img4.png" alt="Roti Pisang Coklat" loading="lazy">
+          <span class="product-badge">FAVORIT</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-category">ROTI GURIH</span>
+          <span class="product-price">Rp12.000</span>
+        </div>
+        <h3 class="product-name">Roti Pisang Coklat</h3>
+        <p class="product-description">Pisang dan coklat bertemu coklat penghantar lezat.</p>
+        <div class="product-order"><a href="#">Pesan roti ini ↗</a></div>
+      </article>
+    </div>
+    <button class="product-carousel-button product-carousel-previous" type="button" aria-label="Produk sebelumnya" hidden>&lt;</button>
+    <button class="product-carousel-button product-carousel-next" type="button" aria-label="Produk berikutnya">&gt;</button>
   </div>
 </section>
 
@@ -166,5 +170,6 @@
 </footer>
 
 <script src="splash.js"></script>
+<script src="product-carousel.js"></script>
 </body>
 </html>
