@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: none;
+}
+
 .site-header {
   position: sticky;
   top: 0;
