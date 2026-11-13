@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Produk | Tefa Bakery &amp; Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <iframe class="site-header-frame" src="header.html#nav-products" title="Navigasi utama Tefa Bakery &amp; Coffee" scrolling="no"></iframe>
+
+  <main>
+    <section class="product-intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">DARI OVEN KE MEJA ANDA</p>
+        <h1 id="page-title">Pilih roti, temukan favoritmu.</h1>
+        <p class="intro-description">Manis untuk memanjakan diri, gurih untuk mengisi hari. Dibuat segar dengan rasa rumahan yang selalu bikin ingin kembali.</p>
+      </div>
+      <aside class="order-note">
+        <svg class="order-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M5 4.5h8l4 4v3M13 4.5v4h4M5 4.5v15h8"></path>
+          <path d="m15.5 18.5 4.8-4.8 1.5 1.5-4.8 4.8-2.2.7z"></path>
+        </svg>
+        <p class="order-title">Pesan langsung dari produk</p>
+        <p class="order-description">Klik produk pilihan Anda untuk menanyakan ketersediaan dan pemesanan lewat email.</p>
+      </aside>
+    </section>
+
+    <section class="catalog" aria-label="Daftar produk roti">
+      <div class="catalog-toolbar">
+        <div class="filters" role="group" aria-label="Filter jenis roti">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Semua roti <span aria-hidden="true">· 6</span></button>
+          <button class="filter-button" type="button" data-filter="manis" aria-pressed="false">Roti manis</button>
+          <button class="filter-button" type="button" data-filter="gurih" aria-pressed="false">Roti gurih</button>
+          <button class="filter-button" type="button" data-filter="tawar" aria-pressed="false">Roti tawar</button>
+        </div>
+        <p class="catalog-count" aria-live="polite">6 pilihan roti · mulai Rp8.000</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="manis">
+          <div class="product-image">
+            <img src="assets/img4.png" alt="Roti cokelat dengan isian melimpah" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI MANIS</span><span class="product-price">Rp8.000</span></div>
+          <h2 class="product-name">Roti Cokelat Klasik</h2>
+          <p class="product-description">Roti lembut dengan isian cokelat melimpah.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Cokelat%20Klasik">Pesan roti ini ↗</a></div>
+        </article>
+
+        <article class="product-card" data-category="manis">
+          <div class="product-image">
+            <img src="assets/img2.png" alt="Roti manis panggang" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI MANIS</span><span class="product-price">Rp9.000</span></div>
+          <h2 class="product-name">Roti Keju Susu</h2>
+          <p class="product-description">Gurihnya keju bertemu manisnya susu.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Keju%20Susu">Pesan roti ini ↗</a></div>
+        </article>
+
+        <article class="product-card" data-category="gurih">
+          <div class="product-image">
+            <img src="assets/img3.png" alt="Roti abon sapi dengan taburan abon" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI GURIH</span><span class="product-price">Rp12.000</span></div>
+          <h2 class="product-name">Roti Abon Sapi</h2>
+          <p class="product-description">Abon sapi gurih di atas roti yang empuk.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Abon%20Sapi">Pesan roti ini ↗</a></div>
+        </article>
+
+        <article class="product-card" data-category="manis">
+          <div class="product-image">
+            <img src="assets/img2.png" alt="Roti manis panggang" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI MANIS</span><span class="product-price">Rp9.000</span></div>
+          <h2 class="product-name">Roti Keju Susu</h2>
+          <p class="product-description">Gurihnya keju bertemu manisnya susu.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Keju%20Susu">Pesan roti ini ↗</a></div>
+        </article>
+
+        <article class="product-card" data-category="gurih">
+          <div class="product-image">
+            <img src="assets/img3.png" alt="Roti abon sapi dengan taburan abon" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI GURIH</span><span class="product-price">Rp12.000</span></div>
+          <h2 class="product-name">Roti Abon Sapi</h2>
+          <p class="product-description">Abon sapi gurih di atas roti yang empuk.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Abon%20Sapi">Pesan roti ini ↗</a></div>
+        </article>
+
+        <article class="product-card" data-category="gurih">
+          <div class="product-image">
+            <img src="assets/img3.png" alt="Roti abon sapi dengan taburan abon" loading="lazy">
+            <span class="product-badge">FAVORIT</span>
+          </div>
+          <div class="product-meta"><span class="product-category">ROTI GURIH</span><span class="product-price">Rp12.000</span></div>
+          <h2 class="product-name">Roti Abon Sapi</h2>
+          <p class="product-description">Abon sapi gurih di atas roti yang empuk.</p>
+          <div class="product-order"><a href="mailto:tefacoffesip@polije.ac.id?subject=Pesan%20Roti%20Abon%20Sapi">Pesan roti ini ↗</a></div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>Belum ada pilihan roti tawar hari ini.</p>
+
+      <aside class="availability-note">
+        <span aria-hidden="true">ⓘ</span>
+        <div><strong>Roti segar punya waktunya sendiri.</strong><p>Pilihan roti mengikuti ketersediaan harian. Untuk jumlah banyak, silakan pesan lebih awal sebelum pengambilan.</p></div>
+      </aside>
+    </section>
+  </main>
+
+  <iframe class="site-footer-frame" src="footer.html" title="Footer Tefa Bakery &amp; Coffee" scrolling="no"></iframe>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll(".filter-button");
+      var cards = document.querySelectorAll(".product-card");
+      var count = document.querySelector(".catalog-count");
+      var emptyState = document.querySelector(".empty-state");
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var filter = button.dataset.filter;
+          var visibleCount = 0;
+
+          buttons.forEach(function (item) {
+            var isActive = item === button;
+            item.classList.toggle("is-active", isActive);
+            item.setAttribute("aria-pressed", String(isActive));
+          });
+
+          cards.forEach(function (card) {
+            var isVisible = filter === "all" || card.dataset.category === filter;
+            card.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+          });
+
+          count.textContent = filter === "all"
+            ? "6 pilihan roti · mulai Rp8.000"
+            : visibleCount + " pilihan roti";
+          emptyState.hidden = visibleCount > 0;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
