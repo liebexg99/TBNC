@@ -74,6 +74,15 @@ a:focus-visible {
   line-height: 2.2;
 }
 
+.footer-column a {
+  transition: color .2s ease;
+}
+
+.footer-column a:hover,
+.footer-column a:focus-visible {
+  color: #e6b08c;
+}
+
 .footer-heading {
   margin-bottom: 8px;
   color: #cdb8a4;

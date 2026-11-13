@@ -179,6 +179,14 @@ button {
   padding: 13px;
   background: var(--paper);
   box-shadow: 0 1px 0 var(--line);
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgb(58 42 34 / 12%);
+  }
 }
 
 .product-card[hidden] {
@@ -253,10 +261,14 @@ button {
 .product-order a {
   color: var(--accent);
   font-size: 11px;
+  transition: color .2s ease;
 }
 
-.product-order a:hover {
+.product-order a:hover,
+.product-order a:focus-visible {
+  color: #78301f;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .empty-state {
@@ -376,5 +388,13 @@ button {
 @media (max-width: 360px) {
   .site-footer-frame {
     height: 760px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filter-button,
+  .product-card,
+  .product-order a {
+    transition: none;
   }
 }

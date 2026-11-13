@@ -97,8 +97,11 @@ a:focus-visible {
 .main-nav a {
   padding-bottom: 6px;
   border-bottom: 2px solid transparent;
+  transition: border-color .2s ease, color .2s ease;
 }
 
+.main-nav a:hover,
+.main-nav a:focus-visible,
 .main-nav a:target {
   border-color: #a8472f;
   color: #a8472f;

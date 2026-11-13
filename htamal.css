@@ -93,6 +93,8 @@ html::-webkit-scrollbar {
 }
 
 .button-primary {
+  position: relative;
+  overflow: hidden;
   padding: 18px 28px;
   border-radius: 3px;
   background: #A8472F;
@@ -100,11 +102,45 @@ html::-webkit-scrollbar {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+  transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.button-primary::after {
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 38%;
+  height: 220%;
+  transform: skewX(-20deg);
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 65%), transparent);
+  content: "";
+  pointer-events: none;
+  transition: left .65s ease;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  transform: translateY(-2px);
+  background: #913b26;
+  box-shadow: 0 8px 18px rgb(58 42 34 / 18%);
+}
+
+.button-primary:hover::after,
+.button-primary:focus-visible::after {
+  left: 130%;
 }
 
 .button-secondary {
   color: #A8472F;
   font-size: 16px;
+  transition: color .2s ease;
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  color: #78301f;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .hero-note {
@@ -165,6 +201,14 @@ html::-webkit-scrollbar {
   color: #A8472F;
   font-size: 20px;
   text-decoration: none;
+  transition: color .2s ease;
+}
+
+.all-products:hover,
+.all-products:focus-visible {
+  color: #78301f;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .product-grid {
@@ -185,6 +229,14 @@ html::-webkit-scrollbar {
   padding: 24px;
   border: 1px solid #F3E6D2;
   background: #FFFAF2;
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgb(58 42 34 / 12%);
+  }
 }
 
 .product-image {
@@ -255,6 +307,14 @@ html::-webkit-scrollbar {
   color: #A8472F;
   font-size: 15px;
   text-decoration: none;
+  transition: color .2s ease;
+}
+
+.product-order a:hover,
+.product-order a:focus-visible {
+  color: #78301f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .about {
@@ -314,6 +374,14 @@ html::-webkit-scrollbar {
   color: #A8472F;
   font-size: 15px;
   text-decoration: none;
+  transition: color .2s ease;
+}
+
+.about-location:hover,
+.about-location:focus-visible {
+  color: #78301f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .hero-visual img,
@@ -349,6 +417,18 @@ html::-webkit-scrollbar {
 @media (max-width: 640px) {
   .site-footer-frame {
     height: 600px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-primary,
+  .button-primary::after,
+  .button-secondary,
+  .all-products,
+  .product-card,
+  .product-order a,
+  .about-location {
+    transition: none;
   }
 }
 
